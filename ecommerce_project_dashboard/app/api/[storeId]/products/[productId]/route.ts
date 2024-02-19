@@ -166,6 +166,12 @@ export async function DELETE (
             },
         });
 
+        await prismadb.order.deleteMany({
+            where: {
+                storeId: params.storeId,
+            }
+        });
+
         const product = await prismadb.product.deleteMany({
             where: {
                 id: params.productId,

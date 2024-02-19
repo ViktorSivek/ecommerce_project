@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Admin Dashboard
+
+Welcome to the Admin Dashboard for my E-Commerce platform, designed to provide comprehensive control over the online store. This dashboard allows for in-depth management of products, orders, and site settings, ensuring that administrators can efficiently oversee the operations of the e-commerce website.
+
+## Overview
+
+This dashboard is the central hub for managing the e-commerce platform, offering detailed insights and controls for the store's inventory, sales, and user interactions. Built with modern technologies, it emphasizes efficiency, security, and user experience.
+
+## Demo
+
+Try this admin panel:
+- **Domain:** [https://ecommerce-project-admin-one.vercel.app/](https://ecommerce-project-admin-one.vercel.app/)
+- **Demo Account:**
+  - Username: `demouser`
+  - Password: `demopassword`
+
+### Technologies Used
+
+- **Frontend:** Next.js
+- **Styling:** Tailwind CSS with Shadcn/UI components
+- **Database:** Prisma with PlanetScale
+- **Authentication:** Clerk
+- **Payments:** Stripe integration for order management
+- **Deployment:** Vercel
+- **Backend Routing:** Next.js API routes for seamless data management
+
+### Features
+
+- **Sales Overview:** Displays total revenue, sales data, and stock levels, along with monthly trends through intuitive graphs.
+- **Content Management:** Allows administrators to manage billboards, categories, sizes, colors, and products displayed on the e-commerce site.
+- **Order Management:** View and manage all orders placed on the site, including payment statuses and customer details.
+- **Shop Management:** Create and manage multiple shops, connecting each with the main e-commerce platform through APIs for streamlined goods management.
+
+### E-commerce website
+
+The website, the is second part of this project.
+
+[ecommerce web demo](https://ecommerce-project-admin-one.vercel.app/)
+[ecommerce web github](https://github.com/ViktorSivek/ecommerce_project)
 
 ## Getting Started
 
-First, run the development server:
+To get started with AI Doprava, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Clone the repository**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/ViktorSivek/ecommerce_project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm install
 
-## Learn More
+3. **Set up environment variables**
 
-To learn more about Next.js, take a look at the following resources:
+   Create a .env.local file in the root directory and add your OpenAI API key and Clerk         credentials:
+   ```bash
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Open http://localhost:3000 with your browser to see the result.
+   ```bash
+   npm run dev
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions to enhance the functionality and performance of our admin dashboard.

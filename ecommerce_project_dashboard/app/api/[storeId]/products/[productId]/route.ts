@@ -160,17 +160,14 @@ export async function DELETE (
         }
 
         // Delete related OrderItems
-        await prismadb.orderItem.deleteMany({
-            where: {
-            productId: params.productId,
-            },
-        });
+        // await prismadb.orderItem.deleteMany({
+        //     where: {
+        //     productId: params.productId,
+        //     },
+        // });
+        await prismadb.orderItem.deleteMany({});
 
-        await prismadb.order.deleteMany({
-            where: {
-                storeId: params.storeId,
-            }
-        });
+        await prismadb.order.deleteMany({});
 
         const product = await prismadb.product.deleteMany({
             where: {
